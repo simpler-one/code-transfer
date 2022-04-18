@@ -88,3 +88,39 @@ T[] result = .Select(v => v * 2).ToArray();
 ```
 </td></tr>
 </tbody></table>
+
+
+## Filter 
+<table><tbody>
+<tr><td valign="middle">JavaScript</td><td>
+
+```js
+const result = source.filter(v => v !== undefined);
+```
+</td></tr>
+
+<tr><td valign="middle">Python</td><td>
+
+```python
+result = [v for v in source if v is not None]
+```
+</td></tr>
+
+<tr><td valign="middle">Java</td><td>
+
+```java
+List<Integer> result = source.stream().filter(v -> v != null).collect(Collectors.toList());
+```
+</td></tr>
+<tr><td valign="middle">C#</td><td>
+
+```c#
+T[] result = Array.FindAll(source, v => v != null);
+```
+---
+```c#
+...
+T[] result = .todo(v => v != null).ToArray();
+```
+</td></tr>
+</tbody></table>
