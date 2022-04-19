@@ -108,6 +108,10 @@ const result = source.filter(v => v !== undefined);
 ```python
 result = [v for v in source if v is not None]
 ```
+---
+```python
+result = list(filter(lambda v: v is not None, source))
+```
 </td></tr>
 
 <tr><td valign="middle">Java</td><td>
