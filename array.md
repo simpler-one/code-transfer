@@ -68,6 +68,10 @@ const result = source.map(v => v * 2);
 ```python
 result = [v * 2 for v in source]
 ```
+---
+```python
+result = list(map(lambda v: v * 2, source))
+```
 </td></tr>
 
 <tr><td valign="middle">Java</td><td>
