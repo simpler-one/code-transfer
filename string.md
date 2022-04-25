@@ -50,7 +50,7 @@ const text = `price: ${price.padStart(6, " ")}`;
 
 ```python
 price = 123
-url = f"price: {price: >6}"
+text = f"price: {price: >6}"
 ```
 </td></tr>
 
