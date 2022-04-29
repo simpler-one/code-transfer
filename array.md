@@ -87,8 +87,9 @@ T[] result = Array.ConvertAll(source, v => v * 2);
 ```
 ---
 ```c#
+using System.Linq;
 ...
-T[] result = .Select(v => v * 2).ToArray();
+T[] result = source.Select(v => v * 2).ToArray();
 ```
 </td></tr>
 </tbody></table>
@@ -130,8 +131,9 @@ T[] result = Array.FindAll(source, v => v != null);
 ```
 ---
 ```c#
+using System.Linq;
 ...
-T[] result = .todo(v => v != null).ToArray();
+T[] result = source.Where(v => v != null).ToArray();
 ```
 </td></tr>
 </tbody></table>
@@ -170,8 +172,9 @@ T result = Array.Find(source, v => v != null);
 ```
 ---
 ```c#
+using System.Linq;
 ...
-T result = .todo(v => v != null).ToDo();
+T result = source.FirstOrDefault(v => v != null);
 ```
 </td></tr>
 </tbody></table>
