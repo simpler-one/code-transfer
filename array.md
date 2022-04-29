@@ -19,7 +19,7 @@ result = source[:]
 ```
 </td></tr>
 
-<tr><td valign="middle">Java</td><td>
+<tr><td valign="middle">Java(Array)</td><td>
 
 ```java
 int[] result = Arrays.copyOf(source, source.length);
@@ -29,12 +29,15 @@ int[] result = Arrays.copyOf(source, source.length);
 int[] result = new int[source.length];
 System.arraycopy(source, 0, result, 0, source.length);
 ```
----
+
+</td></tr>
+<tr><td valign="middle">Java(List)</td><td>
+
 ```java
 List<T> result = new ArrayList<>(source);
 ```
 </td></tr>
-<tr><td valign="middle">C#</td><td>
+<tr><td valign="middle">C#(Array)</td><td>
 
 ```c#
 T[] result = new T[source.Length];
@@ -50,6 +53,12 @@ Array.Copy(source, 0, result, 0, source.Length);
 ```c#
 T[] result = <T[]>source.Clone();
 ```
+
+</td></tr>
+<tr><td valign="middle">C#(List)</td><td>
+
+ToDo
+
 </td></tr>
 </tbody></table>
 
